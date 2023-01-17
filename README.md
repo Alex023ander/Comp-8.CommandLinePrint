@@ -1,12 +1,12 @@
 # Comp-8.CommandLinePrint
 
-import java.util.*;
-public class Statistics {
-    public static void main(String[] args) {
-        System.out.println("Command-line arguements:");
-        
-        	for(String arg : args) {
-        		System.out.println(arg);
-        	}
+public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("No arguments");
+        } else {
+            for (String arg : args) {
+                System.out.println(arg);
+            }
+        }
     }
 }
